@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const movieIds = ["tt3896198","tt4154796","tt0848228","tt0078346","tt0796366", "tt0111161"]; // Example movie IDs
    // Example movie IDs
       const fetchPromises = movieIds.map(movieId => {
-        const apiUrl = `http://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`;
+        const apiUrl = `https://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`;
         return fetch(apiUrl)
           .then(response => {
             if (!response.ok) {
